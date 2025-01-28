@@ -11,6 +11,47 @@
 </head>
 <body>
   
+  <style>
+    /* Styles pour positionner le bouton en haut et centré */
+    .back-to-home-btn {
+    position: fixed;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* Pour qu'il reste visible */
+    background-color: #008080; /* Couleur de fond verte */
+    color: white; /* Couleur du texte en blanc */
+    border: none; /* Enlever la bordure */
+    padding: 8px 20px; /* Espacement interne du bouton (plus petit) */
+    text-decoration: none; /* Enlever le souligné du lien */
+    border-radius: 0 0 25px 25px; /* Demi-cercle inversé (arrondi sur les coins inférieurs) */
+    font-size: 12px; /* Taille du texte plus petite */
+    line-height: 0px; /* Alignement vertical du texte */
+    text-align: center; /* Centrer le texte horizontalement */
+    width: 100px; /* Largeur du bouton */
+    height: 20px; /* Hauteur du bouton */
+    
+    /* Flexbox pour centrer le texte verticalement et horizontalement */
+    display: flex;
+    align-items: center; /* Aligne le texte verticalement */
+    justify-content: center; /* Aligne le texte horizontalement */
+  }
+  .back-to-home-btn:focus,
+  .back-to-home-btn:active {
+  background-color: #008080;
+}
+      /* Effet au survol du bouton */
+  .back-to-home-btn:hover {
+    background-color: #00b9b9; /* Couleur légèrement plus foncée au survol */
+    border-color: #00b9b9; /* Bordure plus foncée au survol */
+  }
+  </style>
+  </head>
+  <body>
+    
+    <!-- Bouton de retour à l'accueil, centré en haut de l'écran -->
+    <a href="index.html" class="btn btn-primary back-to-home-btn">Accueil</a>
+  
   <div class="container">
     <!-- Tstbite Components, My 4, My Md 5 -->
     <section class="tstbite-components my-4 my-md-5">
