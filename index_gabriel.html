@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Ripaille">
+<meta name="keywords" content="Ripaille">
+<meta name="author" content="Ripaille">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Accueil</title>
+<link href="assets/images/logo.png" rel="shortcut icon" type="image/x-icon">
+<!-- Tastebite External CSS -->
+<link href="assets/css/tastebite-styles.css" rel="stylesheet" type="text/css" media="all">
+<link rel="canonical" href="https://fabrx.co/preview/tastebite/index.html" />
+</head>
+
+<style>
+  .btn-switch {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 0px;
+  }
+  .btn-switch a {
+    padding: 4px 15px;
+    background: #008080;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .btn-switch a:hover, .btn-switch a.active {
+    background: #00b9b9;
+  }
+</style>
+
+<body>
+
+<!-- Tstbite Section, P 0 -->
+<section class="tstbite-section p-0">
+  <div class="container">
+    <!-- Tstbite Header, Bg White -->
+    <header class="tstbite-header bg-white">
+    </header>
+
+    <div class="card rounded-16 overflow-hidden border-0 bg-secondary mt-0 mt-md-4">
+      <div class="row g-0">
+        <div class="col-lg-7">
+          <img src="assets/images/430723460_5dc814999e_z.jpg" class="w-100" alt="Menu">
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 p-md-5 d-flex flex-column justify-content-center h-100 position-relative">
+            <div class="container">
+              <div class="btn-switch">
+                  <a href="index.html" id="btn-pierre">Recettes de Pierre</a>
+                  <a href="index_gabriel.html" id="btn-gabriel">Recettes de Gabriel</a>
+                </div>
+            </div>
+            <h4 class="my-3">Du sale</h4>
+            <p class="pr-0 pr-md-4 pb-3 pb-sm-5 pb-lg-0" style="text-align: justify;">Découvrez les lourdes recettes de Gaby.</p>
+            <p class="pr-0 pr-md-4 pb-3 pb-sm-5 pb-lg-0" style="text-align: justify;">Turgescence assurée.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Récupère l'URL actuelle
+      const currentPage = window.location.pathname;
+      
+      // Vérifie quelle page est chargée et ajoute la classe active
+      if (currentPage.includes("index.html")) {
+        document.getElementById("btn-pierre").classList.add("active");
+      } else if (currentPage.includes("index_gabriel.html")) {
+        document.getElementById("btn-gabriel").classList.add("active");
+      }
+    </script>
+    
+    
+    <!-- Tstbite Components, My 4, My Md 5 -->
+    <section class="tstbite-components my-4 my-md-5">
+      <h5 class="py-3 mb-0">Petits-déjeuners et collations</h5>
+      <div class="row">
+      <div class="col-md-4">
+        <figure class="my-3 tstbite-card">
+          <a href="Yaourt-chevre.html" class="tstbite-animation rounded-6">
+            <img src="assets/images/Yaourt-chevre.jpg" class="w-100" alt="Menu">
+          </a>
+          <figcaption class="mt-2">
+            <div class="w-100 float-left">
+              <div class="float-left">
+                <div class="fabrx-ratings has-rating rating">
+                  <input type="radio" id="radio16" name="rate4" value="1" checked="checked">
+                  <label for="radio16" class="custom-starboxes"></label>
+                  <input type="radio" id="radio17" name="rate4" value="2">
+                  <label for="radio17" class="custom-starboxes"></label>
+                  <input type="radio" id="radio18" name="rate4" value="3">
+                  <label for="radio18" class="custom-starboxes"></label>
+                  <input type="radio" id="radio19" name="rate4" value="4">
+                  <label for="radio19" class="custom-starboxes"></label>
+                  <input type="radio" id="radio20" name="rate4" value="5">
+                  <label for="radio20" class="custom-starboxes"></label>
+                </div>
+              </div>
+            </div>
+            <a href="Yaourt-chevre.html" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Yaourt au lait de chèvre</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+<!-- Tastebite Scripts -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/html5.min.js"></script>
+<script src="assets/js/sticky.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/masonry.min.js"></script>
+<script src="assets/js/tastebite-scripts.js"></script>
+</body>
+</html>

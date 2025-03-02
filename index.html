@@ -12,6 +12,28 @@
 <link href="assets/css/tastebite-styles.css" rel="stylesheet" type="text/css" media="all">
 <link rel="canonical" href="https://fabrx.co/preview/tastebite/index.html" />
 </head>
+
+<style>
+  .btn-switch {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 0px;
+  }
+  .btn-switch a {
+    padding: 4px 15px;
+    background: #008080;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .btn-switch a:hover, .btn-switch a.active {
+    background: #00b9b9;
+  }
+</style>
+
 <body>
 
 <!-- Tstbite Section, P 0 -->
@@ -28,6 +50,12 @@
         </div>
         <div class="col-lg-5">
           <div class="p-4 p-md-5 d-flex flex-column justify-content-center h-100 position-relative">
+            <div class="container">
+              <div class="btn-switch">
+                  <a href="index.html" id="btn-pierre">Recettes de Pierre</a>
+                  <a href="index_gabriel.html" id="btn-gabriel">Recettes de Gabriel</a>
+                </div>
+            </div>
             <h4 class="my-3">La bonne ripaille</h4>
             <p class="pr-0 pr-md-4 pb-3 pb-sm-5 pb-lg-0" style="text-align: justify;">Découvrez des mets naturellement protéinés, copieux et simples à réaliser. Ces recettes accessibles s'intègrent dans une alimentation riche, gourmande et néanmoins saine.</p>
             <p class="pr-0 pr-md-4 pb-3 pb-sm-5 pb-lg-0" style="text-align: justify;">Les aliments transformés, les acides gras trans et les sucres raffinés sont éliminés. On privilégie les viandes maigres, les féculents à indice glycémique faible et les bons lipides.</p>
@@ -35,6 +63,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Récupère l'URL actuelle
+      const currentPage = window.location.pathname;
+      
+      // Vérifie quelle page est chargée et ajoute la classe active
+      if (currentPage.includes("index.html")) {
+        document.getElementById("btn-pierre").classList.add("active");
+      } else if (currentPage.includes("index_gabriel.html")) {
+        document.getElementById("btn-gabriel").classList.add("active");
+      }
+    </script>
+    
+    
     <!-- Tstbite Components, My 4, My Md 5 -->
     <section class="tstbite-components my-4 my-md-5">
       <h5 class="py-3 mb-0">Petits-déjeuners et collations</h5>
