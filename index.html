@@ -81,11 +81,37 @@
  
     </script>
 
-    <!-- Tstbite Components, My 4, My Md 5 -->
+
+    <!-- Tstbite Components, My 4, My Md 5 --> 
+     
     <section class="tstbite-components my-4 my-md-5">
-      <h5 class="py-3 mb-0">Petits-déjeuners et collations</h5>
+
+      <style>
+        #recherche {
+          padding: 10px 15px;
+          border: 2px solid #ccc;
+          border-radius: 20px;
+          outline: none;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        #recherche:focus {
+          border-color: #008080;       /* couleur du contour quand on clique */
+          box-shadow: 0 0 5px #00b9b9; /* petit effet lumineux optionnel */
+        }
+      </style>
+
+      <div class="mb-4">
+        <input type="text" id="recherche" class="form-control" placeholder="Rechercher une recette...">
+      </div>
+
+      <p id="no-result" class="text-center text-muted" style="display:none;">
+        Pas de résultat.
+      </p>
+
+      <h5 class="py-3 mb-0 hide-on-search ">Petits-déjeuners et collations</h5>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="skyr-muesli-banane.html" class="tstbite-animation rounded-6">
               <img src="assets/images/muesli-banane-skyr.jpg" class="w-100" alt="Menu">
@@ -111,7 +137,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="smoothie-banane.html" class="tstbite-animation rounded-6">
               <img src="assets/images/smoothie-banane.jpg" class="w-100" alt="Menu">
@@ -137,7 +163,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="porridge.html" class="tstbite-animation rounded-6">
               <img src="assets/images/porridge.jpg" class="w-100" alt="Menu">
@@ -163,7 +189,7 @@
             </figcaption>
           </figure>
         </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="skyr-banane-caramelisee.html" class="tstbite-animation rounded-6">
             <img src="assets/images/banane-skyr.jpg" class="w-100" alt="Menu">
@@ -189,7 +215,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="moelleux-chocolat.html" class="tstbite-animation rounded-6">
             <img src="assets/images/moelleux-chocolat.jpg" class="w-100" alt="Menu">
@@ -215,7 +241,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="pancake-patate-douce.html" class="tstbite-animation rounded-6">
             <img src="assets/images/pancake-patate-douce.jpg" class="w-100" alt="Menu">
@@ -241,7 +267,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="oeufs-brouilles.html" class="tstbite-animation rounded-6">
             <img src="assets/images/oeufs-chocolat.JPG" class="w-100" alt="Menu">
@@ -267,7 +293,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="tartine-avocat-oeuf.html" class="tstbite-animation rounded-6">
             <img src="assets/images/toast-avocat-oeuf.jpg" class="w-100" alt="Menu">
@@ -293,7 +319,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="smoothie-brocoli.html" class="tstbite-animation rounded-6">
             <img src="assets/images/smoothie-brocoli.jpg" class="w-100" alt="Menu">
@@ -319,7 +345,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="granola.html" class="tstbite-animation rounded-6">
             <img src="assets/images/granola.jpg" class="w-100" alt="Menu">
@@ -345,7 +371,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="puree-noisette.html" class="tstbite-animation rounded-6">
             <img src="assets/images/puree-noisette.jpg" class="w-100" alt="Menu">
@@ -371,7 +397,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="pate-chocolat-noisette.html" class="tstbite-animation rounded-6">
             <img src="assets/images/pate-chocolat-noisette.jpg" class="w-100" alt="Menu">
@@ -397,7 +423,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="porridge-refrigere.html" class="tstbite-animation rounded-6">
             <img src="assets/images/porridge-refrigere.jpg" class="w-100" alt="Menu">
@@ -423,7 +449,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="muffin-avoine.html" class="tstbite-animation rounded-6">
             <img src="assets/images/muffin-avoine.jpg" class="w-100" alt="Menu">
@@ -449,7 +475,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="confiture.html" class="tstbite-animation rounded-6">
             <img src="assets/images/confiture.jpg" class="w-100" alt="Menu">
@@ -475,7 +501,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="mousse-chocolat.html" class="tstbite-animation rounded-6">
             <img src="assets/images/mousse-chocolat.jpg" class="w-100" alt="Menu">
@@ -501,7 +527,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="tarte-noix.html" class="tstbite-animation rounded-6">
             <img src="assets/images/tarte-noix.jpg" class="w-100" alt="Menu">
@@ -527,7 +553,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="crumble-banane.html" class="tstbite-animation rounded-6">
             <img src="assets/images/crumble-banane.jpg" class="w-100" alt="Menu">
@@ -556,9 +582,9 @@
     </section>
     <!-- Tstbite Components, My 4, My Md 5 -->
     <section class="tstbite-components my-4 my-md-5">
-      <h5 class="py-3 mb-0">Plats principaux</h5>
+      <h5 class="py-3 mb-0 hide-on-search ">Plats principaux</h5>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="burger-thon.html" class="tstbite-animation rounded-6">
               <img src="assets/images/burger-thon.jpeg" class="w-100" alt="Menu">
@@ -584,7 +610,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="risotto-saumon.html" class="tstbite-animation rounded-6">
               <img src="assets/images/risotto-saumon.jpeg" class="w-100" alt="Menu">
@@ -610,7 +636,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="poulet-marrons.html" class="tstbite-animation rounded-6">
               <img src="assets/images/poulet-marrons.jpeg" class="w-100" alt="Menu">
@@ -636,7 +662,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="carbonara.html" class="tstbite-animation rounded-6">
               <img src="assets/images/carbonara.jpg" class="w-100" alt="Menu">
@@ -662,7 +688,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="bolognaise.html" class="tstbite-animation rounded-6">
               <img src="assets/images/bolognaise.jpg" class="w-100" alt="Menu">
@@ -688,7 +714,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="pesto.html" class="tstbite-animation rounded-6">
               <img src="assets/images/tagliatelles-pesto.jpg" class="w-100" alt="Menu">
@@ -714,7 +740,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="pokebowl.html" class="tstbite-animation rounded-6">
               <img src="assets/images/poke.jpg" class="w-100" alt="Menu">
@@ -740,7 +766,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="nuggets.html" class="tstbite-animation rounded-6">
               <img src="assets/images/nuggets.jpg" class="w-100" alt="Menu">
@@ -766,7 +792,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="pizza.html" class="tstbite-animation rounded-6">
               <img src="assets/images/pate-pizza.jpg" class="w-100" alt="Menu">
@@ -792,7 +818,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="nids-oeuf.html" class="tstbite-animation rounded-6">
               <img src="assets/images/nids-oeuf.jpg" class="w-100" alt="Menu">
@@ -818,7 +844,7 @@
             </figcaption>
           </figure>
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="galette-oignon.html" class="tstbite-animation rounded-6">
               <img src="assets/images/galette-oignon.jpg" class="w-100" alt="Menu">
@@ -844,7 +870,7 @@
             </figcaption>
           </figure>
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="alfredo.html" class="tstbite-animation rounded-6">
               <img src="assets/images/alfredo.jpg" class="w-100" alt="Menu">
@@ -870,7 +896,7 @@
             </figcaption>
           </figure>
         </div>  
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="cordon-bleu.html" class="tstbite-animation rounded-6">
               <img src="assets/images/corbon-bleu.jpg" class="w-100" alt="Menu">
@@ -896,7 +922,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="tikka-massala.html" class="tstbite-animation rounded-6">
               <img src="assets/images/poulet-indien.jpg" class="w-100" alt="Menu">
@@ -922,7 +948,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="escalope-normande.html" class="tstbite-animation rounded-6">
               <img src="assets/images/escalope-normande.jpg" class="w-100" alt="Menu">
@@ -948,7 +974,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="lasagnes-bolognaise.html" class="tstbite-animation rounded-6">
               <img src="assets/images/lasagnes-bolognaise.jpg" class="w-100" alt="Menu">
@@ -974,7 +1000,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="lasagnes-pesto.html" class="tstbite-animation rounded-6">
               <img src="assets/images/lasagnes-pesto.png" class="w-100" alt="Menu">
@@ -1000,7 +1026,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="poulet-cajun.html" class="tstbite-animation rounded-6">
               <img src="assets/images/cajun.png" class="w-100" alt="Menu">
@@ -1026,7 +1052,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="chili-con-carne.html" class="tstbite-animation rounded-6">
               <img src="assets/images/chili-con-carne.jpg" class="w-100" alt="Menu">
@@ -1052,7 +1078,7 @@
             </figcaption>
           </figure>
         </div>
-      <div class="col-md-4">
+      <div class="col-md-4 recette">
         <figure class="my-3 tstbite-card">
           <a href="bouillon-poulet.html" class="tstbite-animation rounded-6">
             <img src="assets/images/bouillon-nouille-poulet.jpg" class="w-100" alt="Menu">
@@ -1081,9 +1107,9 @@
     </section>
 
     <section class="tstbite-components my-4 my-md-5">
-      <h5 class="py-3 mb-0">Accompagnements</h5>
+      <h5 class="py-3 mb-0 hide-on-search ">Accompagnements</h5>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="frites-patate-douce.html" class="tstbite-animation rounded-6">
               <img src="assets/images/frites-patates-douces.jpg" class="w-100" alt="Menu">
@@ -1109,7 +1135,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="gnocchi-patate-douce.html" class="tstbite-animation rounded-6">
               <img src="assets/images/gnocchi-patate-douce.JPG" class="w-100" alt="Menu">
@@ -1135,7 +1161,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="mayonnaise.html" class="tstbite-animation rounded-6">
               <img src="assets/images/mayonnaise.jpg" class="w-100" alt="Menu">
@@ -1161,7 +1187,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="confit-oignons.html" class="tstbite-animation rounded-6">
               <img src="assets/images/confit-oignon.jpg" class="w-100" alt="Menu">
@@ -1187,7 +1213,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 recette">
           <figure class="my-3 tstbite-card">
             <a href="pain-avoine.html" class="tstbite-animation rounded-6">
               <img src="assets/images/pain-avoine.jpg" class="w-100" alt="Menu">
@@ -1222,5 +1248,36 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/masonry.min.js"></script>
 <script src="assets/js/tastebite-scripts.js"></script>
+<script>
+  const searchInput = document.getElementById('recherche');
+  const recettes = document.querySelectorAll('.recette');
+  const elementsToToggle = document.querySelectorAll('.hide-on-search');
+  const noResult = document.getElementById('no-result');
+
+  searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    recettes.forEach(function (recette) {
+      const texte = recette.innerText.toLowerCase();
+      const isVisible = texte.includes(query);
+      recette.style.display = isVisible ? 'block' : 'none';
+      if (isVisible) visibleCount++;
+    });
+
+    if (query.length > 0) {
+      elementsToToggle.forEach(el => el.style.display = 'none');
+    } else {
+      elementsToToggle.forEach(el => el.style.display = 'block');
+    }
+
+    // Affiche "Pas de résultat" si aucune recette visible
+    if (visibleCount === 0) {
+      noResult.style.display = 'block';
+    } else {
+      noResult.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
